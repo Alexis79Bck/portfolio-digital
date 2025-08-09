@@ -22,7 +22,7 @@ Su objetivo es servir como carta de presentación profesional y plataforma para 
 ## Instalación
 
 ```bash
-git clone https://github.com/tu_usuario/portfolio-digital.git
+git clone https://github.com/Alexis79Bck/portfolio-digital.git
 cd portfolio-digital
 composer install
 npm install
