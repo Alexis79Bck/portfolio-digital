@@ -1,6 +1,6 @@
 <x-guest-layout >
 
     <div>
-        <h1><strong>HOME PAGE (index)</strong></h1>
+        <h1><strong>BLOG PAGE (blog)</strong></h1>
     </div>
 </x-guest-layout>

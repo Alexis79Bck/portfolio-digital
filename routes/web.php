@@ -3,9 +3,15 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('pages.website.index');
-});
+/**
+ * Rutas Bases para iniciar el proyecto (Temporalmente)
+ */
+
+// Rutas públicas
+Route::view('/', 'pages.website.index')->name('home');
+Route::view('/about', 'pages.website.about')->name('about');
+Route::view('/projects', 'pages.website.projects')->name('projects');
+Route::view('/blog', 'pages.website.blog')->name('blog');
 
 Route::get('/dashboard', function () {
     return view('pages.dashboard.index');
