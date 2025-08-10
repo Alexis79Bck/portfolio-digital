@@ -1,6 +1,7 @@
-<x-guest-layout >
+@extends('layouts.website')
 
+@section('content')
     <div>
         <h1><strong>PROJECTS PAGE (projects)</strong></h1>
     </div>
-</x-guest-layout>
+@endsection
