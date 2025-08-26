@@ -38,8 +38,12 @@ test('las vistas muestran contenido esperado', function () {
  * ✅ Test: El layout base incluye las secciones necesarias
  */
 test('el layout base incluye las secciones de blade', function () {
-    $view = $this->view('layouts.app'); // ajusta si tu layout se llama distinto
+    $view = $this->view('layouts.app', [
+        'slot' => 'Contenido de prueba 1234', // Proporciona un valor para $slot
+        'header' => 'Título de prueba', // Si usas $header, también debes pasarlo
+    ]); // ajusta si tu layout se llama distinto
 
-    $view->assertSee('@yield("content")', false); // false = no escapar Blade
-    $view->assertSee('@include("partials.navbar")', false); // ejemplo de partial
+    $view->assertSee('Contenido de prueba 1234'); 
+    $view->assertSee('Título de prueba'); 
+    $view->assertSee('page-scroll'); // ejemplo de partial
 });
